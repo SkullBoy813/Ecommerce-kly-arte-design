@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Cy Grotesk Grand Regular';
+    src: url('assets/fonts/cy-grotesk-grand-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fonte-principal: 'Cy Grotesk Grand Regular', sans-serif;
+    --cor-primaria: #532273;
+    --cor-secundaria: #8226BF;
+    --cor-terciaria: #924EBF;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: #1d1818;
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    max-height: 50px;
+    max-width: 100%;
+
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar li{
+    display: inline;
+    margin: 0 10px;
+    margin-right: 20px;
+}
+
+.navbar a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: var(--fonte-principal);
+    max-width: 200%;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar li{
+    display: inline;
+    margin: 0 10px;
+    margin-right: 20px;
+}
+
+.navbar a{
+    font-size: 15px;
+}
+}
+
+.navbar a:hover {
+    color: var(--cor-terciaria);
+    transition: 0.3s;
+}
+
+#section1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px
+}
+
+#imagem-section-1 img{
+    bottom: 100px;
+    margin-top:70px;
+    margin-right: 10%;
+    max-width: 60%;
+    max-height: 100%;
+    float: right;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
+}
+
+
+#texto-section-1 h1 {
+    padding-left: 2%;
+    font-family: var(--fonte-principal);
+    color: black;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+#texto-section-1 p {
+    padding-left: 2%;
+    font-family: var(--fonte-principal);
+    color: black;
+    font-size: 30px;
+    max-width: 1000px;
+    
+}
+
+.span-roxo {
+    color: var(--cor-primaria);
+    font-weight: bolder;
+}
+
+#section2-banner img {
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px;
+}
+
+
